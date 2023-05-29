@@ -45,9 +45,9 @@ router.post('/createuser', [
             id: user.id
         }
     }
-    const authToken = jwt.sign(data, JWT_SECRET)
+    const authtoken = jwt.sign(data, JWT_SECRET)
     success = true
-    res.json({ success, authToken })
+    res.json({ success, authtoken })
 })
 
 // ROUTE 2: authenticate a user using: POST "/api/auth/login". No login required
@@ -76,9 +76,9 @@ router.post('/login', [
                 id: user.id
             }
         }
-        const authToken = jwt.sign(data, JWT_SECRET)
+        const authtoken = jwt.sign(data, JWT_SECRET)
         success = true
-        res.json({ success, authToken })
+        res.json({ success, authtoken })
     } catch (error) {
         console.error(error.message)
         res.status(500).send("Internal server error")

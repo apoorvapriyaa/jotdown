@@ -33,7 +33,12 @@ function Signup(props) {
     }
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <span className="display-5" style={{ color: "#b8b8ff" }}>Welcome to <span className="display-5" style={{ color: "#9381ff" }}>JotDown</span></span>
+            <figcaption className="blockquote-footer my-2">
+                Keep all your Jots safe <cite title="Source Title">on cloud</cite>
+            </figcaption>
+
+            <form className='my-4' onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="name" className="form-label">
                         Name

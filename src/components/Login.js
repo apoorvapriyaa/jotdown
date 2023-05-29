@@ -31,7 +31,8 @@ function Login(props) {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <span className="display-5" style={{ color: "#b8b8ff" }}>Login to continue to <span className="display-5" style={{ color: "#9381ff" }}>JotDown</span></span>
+            <form className='my-4' onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">
                         Email address
